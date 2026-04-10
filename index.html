@@ -899,7 +899,9 @@
           </p>
         </div>
       </div>
-      <div class="contact-form">
+      <form class="contact-form" name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="quote-request">
+        <p style="display:none"><input name="bot-field"></p>
         <div class="form-row">
           <div class="form-group">
             <label>First Name</label>
@@ -936,7 +938,8 @@
           <label>Tell Us About Your Project</label>
           <textarea placeholder="Describe what needs to be done, any timeline preferences, or questions you have..."></textarea>
         </div>
-        <button class="form-submit">Send Request &rarr;</button>
+        <button type="submit" class="form-submit">Send Request &rarr;</button>
+      </form>
       </div>
     </div>
   </div>
