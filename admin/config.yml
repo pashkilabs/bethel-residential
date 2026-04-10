@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: pashkilabs/bethel-residential
+  name: git-gateway
   branch: main
 
 media_folder: "images/gallery"
