@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | Bethel Residential</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1a2744;
+    --navy-deep: #0f1a2e;
+    --burnt-orange: #c4652a;
+    --burnt-orange-light: #d4783f;
+    --cream: #faf9f7;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: var(--navy-deep);
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    color: white; text-align: center; padding: 40px 20px;
+  }
+  .container { max-width: 540px; }
+  .logo { height: 80px; margin-bottom: 40px; }
+  .check {
+    width: 80px; height: 80px; border-radius: 50%;
+    background: rgba(196,101,42,0.15); margin: 0 auto 28px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .check svg { width: 40px; height: 40px; stroke: var(--burnt-orange-light); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  h1 {
+    font-family: 'Oswald', sans-serif; font-size: 36px;
+    font-weight: 700; margin-bottom: 16px;
+  }
+  h1 span { color: var(--burnt-orange); }
+  p { color: rgba(255,255,255,0.6); font-size: 17px; line-height: 1.7; margin-bottom: 12px; }
+  .back-link {
+    display: inline-block; margin-top: 32px;
+    background: var(--burnt-orange); color: white;
+    padding: 14px 32px; border-radius: 4px; text-decoration: none;
+    font-family: 'Oswald', sans-serif; font-size: 14px;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    transition: all 0.3s;
+  }
+  .back-link:hover { background: var(--burnt-orange-light); transform: translateY(-2px); }
+</style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/logos/bethel-logo.png" alt="Bethel Residential" class="logo">
+    <div class="check">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h1>Thank You<span>!</span></h1>
+    <p>Your quote request has been received. We'll get back to you within 24 hours with an honest estimate.</p>
+    <p>If you need immediate assistance, feel free to email us at <a href="mailto:requests@bethelresidential.com" style="color: var(--burnt-orange-light);">requests@bethelresidential.com</a></p>
+    <a href="/" class="back-link">&larr; Back to Home</a>
+  </div>
+</body>
+</html>

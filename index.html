@@ -899,32 +899,32 @@
           </p>
         </div>
       </div>
-      <form class="contact-form" name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form class="contact-form" name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
         <input type="hidden" name="form-name" value="quote-request">
-        <p style="display:none"><input name="bot-field"></p>
+        <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
         <div class="form-row">
           <div class="form-group">
             <label>First Name</label>
-            <input type="text" placeholder="John">
+            <input type="text" name="first-name" placeholder="John" required>
           </div>
           <div class="form-group">
             <label>Last Name</label>
-            <input type="text" placeholder="Smith">
+            <input type="text" name="last-name" placeholder="Smith" required>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label>Email</label>
-            <input type="email" placeholder="john@example.com">
+            <input type="email" name="email" placeholder="john@example.com" required>
           </div>
           <div class="form-group">
             <label>Phone</label>
-            <input type="tel" placeholder="(555) 123-4567">
+            <input type="tel" name="phone" placeholder="(555) 123-4567">
           </div>
         </div>
         <div class="form-group">
           <label>Service Needed</label>
-          <select>
+          <select name="service">
             <option value="">Select a service...</option>
             <option>Decks &amp; Fencing</option>
             <option>Outdoor Spaces</option>
@@ -936,11 +936,10 @@
         </div>
         <div class="form-group">
           <label>Tell Us About Your Project</label>
-          <textarea placeholder="Describe what needs to be done, any timeline preferences, or questions you have..."></textarea>
+          <textarea name="message" placeholder="Describe what needs to be done, any timeline preferences, or questions you have..."></textarea>
         </div>
         <button type="submit" class="form-submit">Send Request &rarr;</button>
       </form>
-      </div>
     </div>
   </div>
 </section>
