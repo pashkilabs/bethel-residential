@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/bethel-residential  # ← You'll update this
+  repo: pashkilabs/bethel-residential
   branch: main
 
 media_folder: "images/gallery"
