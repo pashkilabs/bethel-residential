@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/bethel-residential  # ← You'll update this
+  branch: main
+
+media_folder: "images/gallery"
+public_folder: "/images/gallery"
+
+collections:
+  - name: "gallery"
+    label: "Project Gallery"
+    folder: "_data/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Project Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["Decks & Fencing", "Outdoor Spaces", "Drywall Repair", "Home Repair"] }
+      - { label: "Before Photo", name: "before_image", widget: "image" }
+      - { label: "After Photo", name: "after_image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Date Completed", name: "date", widget: "date" }
+      - { label: "Featured Project?", name: "featured", widget: "boolean", default: false }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "_data/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Client Name", name: "name", widget: "string" }
+      - { label: "Location", name: "location", widget: "select", options: ["The Woodlands, TX", "Conroe, TX", "Willis, TX"] }
+      - { label: "Quote", name: "quote", widget: "text" }
+      - { label: "Service Provided", name: "service", widget: "select", options: ["Decks & Fencing", "Outdoor Spaces", "Drywall Repair", "Home Repair"] }
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "Rating (1-5)", name: "rating", widget: "number", min: 1, max: 5, default: 5 }
