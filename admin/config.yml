@@ -32,3 +32,14 @@ collections:
       - { label: "Service Provided", name: "service", widget: "select", options: ["Decks & Fencing", "Outdoor Spaces", "Drywall Repair", "Home Repair"] }
       - { label: "Date", name: "date", widget: "date" }
       - { label: "Rating (1-5)", name: "rating", widget: "number", min: 1, max: 5, default: 5 }
+  
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "about"
+        label: "About Page"
+        file: "_data/settings/about.md"
+        fields:
+          - { label: "Headshot Photo", name: "headshot", widget: "image" }
+          - { label: "Bio", name: "bio", widget: "text", default: "I started Bethel because I see the issues in the residential industry and how trades are doing subpar work while asking for too much in cost." }
+          - { label: "Family Photo (optional)", name: "family_photo", widget: "image", required: false }
